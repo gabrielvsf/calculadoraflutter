@@ -11,7 +11,7 @@ class Calculadora extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Calculadora com teste',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
@@ -42,24 +42,24 @@ class Calculadora extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           'Operação: ',
-                          style: TextStyle(fontSize: 28),
+                          style: TextStyle(fontSize: 25),
                         ),
                         calculadora.primeiroNumero != null
                             ? Text(
                           calculadora.primeiroNumero.toString(),
-                          style: TextStyle(fontSize: 28),
+                          style: TextStyle(fontSize: 25),
                         )
                             : SizedBox.shrink(),
                         calculadora.operacaoEscolhida != null
                             ? Text(
                           calculadora.operacaoEscolhida,
-                          style: TextStyle(fontSize: 28),
+                          style: TextStyle(fontSize: 25),
                         )
                             : SizedBox.shrink(),
                         calculadora.segundoNumero != null
                             ? Text(
                           calculadora.segundoNumero.toString(),
-                          style: TextStyle(fontSize: 28),
+                          style: TextStyle(fontSize: 25),
                         )
                             : SizedBox.shrink(),
                       ],
@@ -68,12 +68,12 @@ class Calculadora extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           'Resultado: ',
-                          style: TextStyle(fontSize: 28),
+                          style: TextStyle(fontSize: 25),
                         ),
                         calculadora.resultado != null
                             ? Text(
                           calculadora.resultado.toStringAsFixed(2),
-                          style: TextStyle(fontSize: 28),
+                          style: TextStyle(fontSize: 25),
                         )
                             : SizedBox.shrink(),
                       ],
@@ -100,10 +100,10 @@ class BotaoZerar extends StatelessWidget {
       color: Colors.blue,
       onPressed: onClickBotao,
       child: Text(
-        'Zerar',
+        'C',
         style: TextStyle(
-          color: Colors.white,
-          fontSize: 18,
+          color: Colors.grey,
+          fontSize: 35,
         ),
       ),
     );
@@ -118,13 +118,13 @@ class BotaoCalcular extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      color: Colors.blue,
+      color: Colors.green,
       onPressed: onClickBotao,
       child: Text(
-        'Calcular',
+        '=',
         style: TextStyle(
           color: Colors.white,
-          fontSize: 18,
+          fontSize: 35,
         ),
       ),
     );
@@ -149,7 +149,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' + ',
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -164,7 +164,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' - ',
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -179,7 +179,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' * ',
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -194,7 +194,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' / ',
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -209,7 +209,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' % ',
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -246,7 +246,7 @@ class Numeros extends StatelessWidget {
               child: Text(
                 i.toString(),
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
