@@ -12,6 +12,8 @@ import '../lib/main.dart';
 void main() {
   testWidgets('Botões Calculadora', (WidgetTester tester) async {
     await tester.pumpWidget(Calculadora());
+    
+    tester.binding.window.physicalSizeTestValue = Size(2000, 2000);
 
     await tester.tap(find.text('+'));
     await tester.pump();
