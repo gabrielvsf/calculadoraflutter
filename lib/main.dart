@@ -149,7 +149,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' + ',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -164,7 +164,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' - ',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -179,7 +179,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' * ',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -194,7 +194,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' / ',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -209,7 +209,7 @@ class Operacoes extends StatelessWidget {
               child: Text(
                 ' % ',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 38,
                   fontWeight: FontWeight.bold,
                 ),
               ),
